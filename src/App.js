@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import React from 'react'
+import AppleCar from './components/appleCar'
+// import AppleItem from './components/appleItem'
+import './styles.css'
+// import AppleStore from './stores/appleStore'
+import AppleListStore from './stores/appleListStore'
+import AppleViewStore from './stores/appleViewStore'
+
+
+// new一个store实例，并将这个实例注入到组件中
+// const appleStore = new AppleStore()
+const appleListStore = new AppleListStore([
+  new AppleViewStore('2'),
+  new AppleViewStore('5')
+])
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppleCar appleListStore={appleListStore}></AppleCar>
     </div>
   );
 }
