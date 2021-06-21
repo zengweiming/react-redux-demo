@@ -9,7 +9,6 @@ import AppleViewStore from './stores/appleViewStore'
 // new一个store实例，并将这个实例注入到组件中
 // const appleStore = new AppleStore()
 const appleListStore = new AppleListStore([
-  new AppleViewStore('2'),
   new AppleViewStore('5')
 ])
 
