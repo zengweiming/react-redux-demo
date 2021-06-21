@@ -2,7 +2,6 @@
 import AppleCar from './components/appleCar'
 // import AppleItem from './components/appleItem'
 import './styles.css'
-// import AppleStore from './stores/appleStore'
 import AppleListStore from './stores/appleListStore'
 import AppleViewStore from './stores/appleViewStore'
 
